@@ -66,3 +66,9 @@ v4l2rtspserver / dev / video0 : RTP 비디오 캡처 기능이있는 하나의 R
 공식 V4L2 드라이버 bcm2835-v4l2
 * 주의 : <code>$ sudo modprobe bcm2835-v4l2 </code>가 안될 시 장치 인식이 제대로 안되고 있다는 소리. 재부팅 시도.
 
+#### Reboot 후 사용법:
+<code>$ sudo modprobe bcm2835-v4l2 </code></br>
+<code>$ cd h264_v4l2_rtspserver </code></br>
+<code>$ sudo cmake . </code></br>
+<code>$ sudo make </code></br>
+<code>$  sudo ./h264_v4l2_rtspserver -F 25 -W 1280 -H 720 -P 8555 /dev/video0 & </code></br>
