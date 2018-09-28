@@ -1,2 +1,2 @@
 # raspberryPi
-![](RPI_Camera.png){: width="100" height="100"}</br>
+![title](RPI_Camera.png){: width="60%" height="60%"}</br>
