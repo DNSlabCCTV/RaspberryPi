@@ -39,6 +39,10 @@ HTTP 서버와 RTSP 서버 중 하나의 서버를 선택해서 설치하세요.
 <li>RTP/RTSP/HTTP</li>
 
 ## Usage 1.
+<code>$ sudo raspi-config </code></br>
+"Enable Camera"</br>
+<code>$ sudo apt-get update </code></br>
+<code>$ sudo apt-get upgrade </code></br>
 <code> sudo apt-get install vlc </code></br>
 <code> sudo raspivid -o - -t 0 -n | cvlc -vvv stream:///dev/stdin --sout '#rtp{sdp=rtsp://:8554/}' :demux=h264 </code></br>
 <code> rtsp://IP:8554/ </code></br>
