@@ -15,6 +15,8 @@ V4L2를 설치 후 활성화 시에 사용자 프로그램이 커널을 통해 I
 사용자 프로그램이 커널을 통해 시스템 하드웨어에 접근 할 수 있도록 “dev” 디렉토리 내에 “video*"라는 장치 파일이 생성이 이루어진다. 
 사용자는 이러한 “/dev/video”을 통해 자료를 읽거나 기타 장치로 자료를 전송이 가능해진다.
 
+<code>$ sudo raspi-config </code></br>
+Enable Camera
 <code>$ sudo apt-get update </code></br>
 <code>$ sudo apt-get upgrade </code></br>
 <code>$ sudo apt-get install liblivemedia-dev libv4l-dev cmake libasound2-dev </code></br>
