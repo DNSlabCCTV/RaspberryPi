@@ -27,6 +27,11 @@ HTTP 서버와 RTSP 서버 중 하나의 서버를 선택해서 설치하세요.
 <code>mjpg-streamer/mjpg_streamer -i "input_file.so -f /home/pi/stream -n pic.jpg" -o "output_http.so -p 9000 -w /home/pi/mjpg-streamer/www" &</code></br>
 
 
+
+
+
+
+
 # RTSP Server
 <li>RTP/UDP unicast</li>
 <li>RTP/UDP multicast</li>
