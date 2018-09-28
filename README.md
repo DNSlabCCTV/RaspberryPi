@@ -5,7 +5,7 @@ HTTP 서버와 RTSP 서버 중 하나의 서버를 선택해서 설치하세요.
 
 
 # HTTP Server
-<li>HLS</li>
+<li>HLS(http live streaming)</li>
 <li>MPEG-DASH</li>
 
 ## Usage
