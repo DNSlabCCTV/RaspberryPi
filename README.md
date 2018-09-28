@@ -25,4 +25,4 @@
 <code>$ sudo make </code></br>
 <code>$  sudo ./h264_v4l2_rtspserver -F 25 -W 1280 -H 720 -P 8555 /dev/video0 & </code></br>
 
-* 주의 : <code>$ sudo modprobe bcm2835-v4l2 </code></br>가 안될 시 장치 인식이 제대로 안되고 있다는 소리. 재부팅 시도.
+* 주의 : <code>$ sudo modprobe bcm2835-v4l2 </code>가 안될 시 장치 인식이 제대로 안되고 있다는 소리. 재부팅 시도.
