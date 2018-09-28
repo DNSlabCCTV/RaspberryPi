@@ -10,7 +10,9 @@
 ## Usage 2.
 ### V4L2
 #### Feature:
-
+리눅스에서 카메라 입력을 받기위한 표준 인터페이스로서 V4L2를 설치 후 활성화 시에 사용자 프로그램이 커널을 통해 I/O요청을 확인하고 장치 드라이버로 전송이 이루어지는 것이 가능해진다. 
+이러한 것처럼 사용자 프로그램이 커널을 통해 시스템 하드웨어에 접근 할 수 있도록 “dev” 디렉토리 내에 “video*"라는 장치 파일이 생성이 이루어진다. 
+사용자는 이러한 “/dev/video”을 통해 자료를 읽거나 기타 장치로 자료를 전송이 가능해진다.
 
 <code>$ sudo apt-get update </code></br>
 <code>$ sudo apt-get upgrade </code></br>
@@ -22,3 +24,5 @@
 <code>$ sudo cmake . </code></br>
 <code>$ sudo make </code></br>
 <code>$  sudo ./h264_v4l2_rtspserver -F 25 -W 1280 -H 720 -P 8555 /dev/video0 & </code></br>
+
+* 주의 : <code>$ sudo modprobe bcm2835-v4l2 </code></br>가 안될 시 장치 인식이 제대로 안되고 있다는 소리. 재부팅 시도.
