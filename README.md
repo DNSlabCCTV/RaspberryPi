@@ -1,6 +1,17 @@
 # raspberryPi
 <img src="/RPI_Camera.png" width="40%" height="40%"></br>
 
+# HTTP Server
+<li>HLS</li>
+<li>MPEG-DASH</li>
+
+# RTSP Server
+<li>RTP/UDP unicast</li>
+<li>RTP/UDP multicast</li>
+<li>RTP/TCP</li>
+<li>RTP/RTSP/HTTP</li>
+
+
 ## Usage 1.
 <code> sudo apt-get install vlc </code></br>
 <code> sudo raspivid -o - -t 0 -n | cvlc -vvv stream:///dev/stdin --sout '#rtp{sdp=rtsp://:8554/}' :demux=h264 </code></br>
