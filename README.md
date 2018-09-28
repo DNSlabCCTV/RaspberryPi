@@ -5,12 +5,30 @@
 <li>HLS</li>
 <li>MPEG-DASH</li>
 
+## Usage
+### Streaming video from the Raspberry Pi with mjpg-streamer
+<code>sudo rpi-update</code></br>
+<code>sudo apt-get update</code></br>
+<code>sudo apt-get upgrade</code></br>
+<code>sudo mkdir /home/pi/mjpg-streamer</code></br>
+<code>cd /home/pi/mjpg-streamer</code></br>
+<code>sudo apt-get install libjpeg8-dev</code></br>
+<code>sudo apt-get install imagemagick</code></br>
+<code>sudo apt-get install subversion</code></br>
+<code>sudo svn co https://svn.code.sf.net/p/mjpg-streamer/code/mjpg-streamer/ .</code></br>
+<code>sudo make</code></br>
+<code>sudo mkdir /home/pi/stream</code></br>
+<code>sudo chmod a+rw /home/pi/stream</code></br>
+<code>sudo raspistill -w 640 -h 480 -q 5 -o /home/pi/stream/pic.jpg -tl 100 -t 9999999 -th 0:0:0 -n &</code></br>
+<code>export LD_LIBRARY_PATH=/home/pi/mjpg-streamer/</code></br>
+<code>mjpg-streamer/mjpg_streamer -i "input_file.so -f /home/pi/stream -n pic.jpg" -o "output_http.so -p 9000 -w /home/pi/mjpg-streamer/www" &</code></br>
+
+
 # RTSP Server
 <li>RTP/UDP unicast</li>
 <li>RTP/UDP multicast</li>
 <li>RTP/TCP</li>
 <li>RTP/RTSP/HTTP</li>
-
 
 ## Usage 1.
 <code> sudo apt-get install vlc </code></br>
