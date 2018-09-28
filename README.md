@@ -4,7 +4,7 @@
 ## Usage 1.
 <code> sudo apt-get install vlc </code></br>
 <code> sudo raspivid -o - -t 0 -n | cvlc -vvv stream:///dev/stdin --sout '#rtp{sdp=rtsp://:8554/}' :demux=h264 </code></br>
-<code> rtsp://192.168.0.46:8554/ </code></br>
+<code> rtsp://:8554/ </code></br>
 
 
 ## Usage 2.
