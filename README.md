@@ -1,4 +1,4 @@
-# raspberryPi
+# RaspberryPi
 <img src="/RPI_Camera.png" width="40%" height="40%"></br>
 HTTP 서버와 RTSP 서버 중 하나의 서버를 선택해서 설치하세요.
 둘 중에 하나를 택한뒤 다른 서버를 테스트해보고 싶을 시 포맷을 하고 시도 해주세요.
