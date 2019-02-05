@@ -33,13 +33,13 @@ HTTP 서버와 RTSP 서버 중 하나의 서버를 선택해서 설치하세요.
 
 
 # RTSP Server
+#### 리눅스에서 카메라 입력을 받기위한 표준 인터페이스
 <li>RTP/UDP unicast</li>
 <li>RTP/UDP multicast</li>
 <li>RTP/TCP</li>
 <li>RTP/RTSP/HTTP</li>
 
 ## Usage 1.
-#### 리눅스에서 카메라 입력을 받기위한 표준 인터페이스
 ### VLC
 <code>$ sudo raspi-config </code></br>
 "Enable Camera"</br>
